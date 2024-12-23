@@ -45,9 +45,9 @@ FIFO 中断的状态位置如图 2-3 所示。
 
 FIFO 触发器级别由以下的寄存器控制字控制：
 
-• uart.Rcvr_FIFO_trigger_level\[RTRIG\]
+• uart.Rcvr_FIFO_trigger_level[RTRIG]
 
-• uart.Tx_FIFO_trigger_level\[TTRIG\]
+• uart.Tx_FIFO_trigger_level[TTRIG]
 
 ### UART 控制器编程流程
 
