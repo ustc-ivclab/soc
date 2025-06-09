@@ -56,11 +56,11 @@ petalinux-config --get-hw-description ../hardware/
 
 1. 从github下载适配petalinux版本的[u-boot](https://github.com/Xilinx/u-boot-xlnx/tree/xlnx_rebase_v2020.01)与[内核](https://github.com/Xilinx/linux-xlnx/tree/xlnx_rebase_v5.4)
 
-2. `配置u-boot：` 选择 Linux Components Selection -->  u-boot  --> ext-local-src  -->  External u-boot local source settings  --> 配置u-boot的绝对路径
+2. `配置u-boot：` 选择 Linux Components Selection --> u-boot --> ext-local-src --> External u-boot local source settings --> 配置u-boot的绝对路径
 
-3. `配置内核：` 选择Linux Components Selection -->  linux-kernel  --> ext-local-src  -->  External linux-kernel local source settings  --> 配置内核的绝对路径
+3. `配置内核：` 选择Linux Components Selection --> linux-kernel --> ext-local-src --> External linux-kernel local source settings --> 配置内核的绝对路径
 
-4. 配置Auto Config Settings -->  选中kernel autoconfig + u-boot autoconfig
+4. 配置Auto Config Settings --> 选中kernel autoconfig + u-boot autoconfig
 
 5. save --> exit
 
@@ -74,7 +74,7 @@ petalinux-config --get-hw-description ../hardware/
 petalinux-config
 ```
 
-出现配置界面，选择Yocto Settings --> 关闭 Enable Network sstate feeds --> Local sstate feeds settings --> 配置sstate文件中的aarch64的绝对路径 exit --> Add pre-mirror url --> 删除原先默认的网址，配置downloads_2020.1/downloads的绝对路径（注意：路径前面加  file://  + 路径）exit save exit
+出现配置界面，选择Yocto Settings --> 关闭 Enable Network sstate feeds --> Local sstate feeds settings --> 配置sstate文件中的aarch64的绝对路径 exit --> Add pre-mirror url --> 删除原先默认的网址，配置downloads_2020.1/downloads的绝对路径（注意：路径前面加 file:// + 路径）exit save exit
 
 ### 设备树
 
